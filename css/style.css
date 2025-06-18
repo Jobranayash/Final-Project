@@ -1,0 +1,312 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #c1f6fe;
+    padding: 10px;
+}
+
+header {
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
+
+header h1 {
+    color: rgb(45, 45, 170);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#links ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+#links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+#links a {
+    text-decoration: none;
+    color: rgb(0, 35, 65);
+    transition: color 1.3s ease;
+    font-size: large;
+}
+
+#links ul li a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.815);
+    margin: 0px 15%;
+    border: 2px solid rgb(45, 45, 170);
+    border-radius: 10px;
+}
+
+#peopleList ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items: center;
+
+}
+
+#peopleList li {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.btns {
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.name {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+
+#top {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+.info-btn,
+.edit-btn,
+.delete-btn,
+#delete-btn,
+#add-btn {
+
+
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#search-container {
+    flex: 50%;
+
+    padding-left: 2%;
+    padding-top: 10px;
+}
+
+#searchInput {
+    background: fixed;
+    border: fixed;
+    outline: fixed;
+
+}
+
+
+#add-delete {
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.17);
+    color: white;
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn {
+    width: 20px;
+
+}
+
+.prof {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    width: 50px;
+}
+
+
+
+footer {
+    color: rgb(45, 45, 170);
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Popup styles */
+#create,
+#info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.348);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#create.hidden,
+#info.hidden {
+    display: none;
+}
+
+#createForm,
+#infoForm {
+    background: rgb(255, 255, 255);
+    padding: 2em;
+    border-radius: 0px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+#createForm div,
+#infoForm div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#createForm div p,
+#infoForm div p {
+    flex: 30%;
+    margin: 0;
+
+}
+
+/*about us , contact us, accebilty*/
+.secndmain {
+    font-size: 1.3em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 5%;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.contactInp,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid rgb(45, 45, 170);
+    border-radius: 5px;
+}
+
+.contactus {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #c1f6fe;
+    background: rgb(0, 0, 0);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover,
+a:hover {
+    background: #55555511;
+}
+
+.contactus:hover {
+    background: #c1f6fe;
+    color: rgb(0, 0, 0);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.contact-info p {
+    display: flex;
+
+}
+
+@media screen and (max-width: 768px) {
+    #links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #links li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin: 0 5%;
+    }
+
+    #search-container,
+    #add-delete {
+        flex: 100%;
+        text-align: center;
+    }
+
+    .secndmain {
+        font-size: 1.1em;
+    }
+}

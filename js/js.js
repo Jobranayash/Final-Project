@@ -4,19 +4,19 @@ const peopleList = document.getElementById("peopleList");
 
 let people = [
     {
-        image: "/Images/add.png",
+        image: "./Images/add.png",
         name: "John Doe",
         phone: "123-456-7890",
         address: "123 Nazareth St, Nazareth",
     },
     {
-        image: "/Images/add.png",
+        image: "./Images/add.png",
         name: "Jane Smith",
         phone: "987-654-3210",
         address: "321 Raineh , St Ahleh",
     },
     {
-        image: "/Images/add.png",
+        image: "./Images/add.png",
         name: "Joo Jarbone",
         phone: "054-654-0399",
         address: "456 Der Hannah, salah"

@@ -1,16 +1,12 @@
 body {
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-family: Arial, sans-serif;
-}
-
-body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #c1f6fe;
-    padding: 10px;
 }
 
 header {
@@ -63,34 +59,90 @@ main {
     border: 2px solid rgb(45, 45, 170);
     border-radius: 10px;
 }
+/* .personheader {
+    display: flex;
+    
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #000;
+} */
+
+/* .personheader>div {
+    flex: 1;
+} */
+
+
+
+#peopleList li.person {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
 
 #peopleList ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    justify-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin: 10px;
 
 }
 
-#peopleList li {
 
+
+.person, .personheader {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+}
+
+.pfp img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1em;
+    flex-grow: 1;
+}
+
+.tag {
+    margin-right: 30%;
+    font-style: italic;
+    color: #555;
+}
+
+
+.btns button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+#peopleList li,
+#peopleList .title,
+h2 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    color: rgb(45, 45, 170);
 
 }
 
 .btns {
     margin-left: auto;
+    display: flex;
+    gap: 10px;
     flex-wrap: wrap;
-}
-
-.name {
-    margin-left: 10px;
-    font-size: 1.2em;
 }
 
 
@@ -100,6 +152,13 @@ main {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+}
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 10%;
 }
 
 
@@ -310,4 +369,27 @@ a:hover {
     .secndmain {
         font-size: 1.1em;
     }
+        #peopleList li.person {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+    
+        .btns {
+            margin-left: 0;
+            width: 100%;
+            justify-content: flex-start;
+        }
+    
+        .tag {
+            margin-right: 0;
+        }
+    
+        .pfp img {
+            width: 40px;
+            height: 40px;
+        }
+        .personheader .pfp,.personheader .name,.personheader .actions{
+            display: none;
+        }
 }

@@ -1,19 +1,34 @@
 'use strict';
 export class Contact {
-    constructor(name, phone, address, image) {
+    #name;
+    #phone; 
+    #address;
+    #image;
+    #tag;
+    constructor(name, phone, address, image,tag) {
         this.name = name;
         this.phone = phone;
         this.address = address;
         this.image = image;
+        this.tag = tag || ''; 
     }
+    // Getters and Setters for properties
 
+    // Tag
+    get tag() {
+        return this._tag;
+    }
+    set tag(value) {
+        this._tag = value;
+    }
+    
     // Name
     get name() {
         return this._name;
     }
 
     set name(value) {
-            this._name = value;
+        this._name = value;
     }
 
     // Phone
@@ -22,7 +37,7 @@ export class Contact {
     }
 
     set phone(value) {
-            this._phone = value;
+        this._phone = value;
     }
 
     // Address
@@ -31,7 +46,7 @@ export class Contact {
     }
 
     set address(value) {
-            this._address = value;
+        this._address = value;
     }
 
     // Image
@@ -40,8 +55,7 @@ export class Contact {
     }
 
     set image(value) {
-            this._image = value; 
+        this._image = value;
     }
 
 }
-

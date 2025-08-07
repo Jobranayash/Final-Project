@@ -9,12 +9,14 @@ body {
     background-color: #c1f6fe;
     transition: background-color 0.3s, color 0.3s;
 }
+
 /* Favorite */
 .favorite-btn {
     background: none;
     border: none;
     cursor: pointer;
 }
+
 .favorite img {
     width: 20px;
     height: 20px;
@@ -28,6 +30,7 @@ body.dark-mode {
     background-color: #291616;
     color: #4e1a1a;
 }
+
 /* DARK MODE for main background areas */
 body.dark-mode main,
 body.dark-mode #peopleList,
@@ -120,11 +123,12 @@ header h1 {
     margin-right: 5px;
 }
 
-#effect img{
+#effect img {
     width: 30px;
     height: 30px;
 }
-#effect{
+
+#effect {
     background: none;
 }
 
@@ -139,6 +143,7 @@ main {
     border: 2px solid rgb(45, 45, 170);
     border-radius: 10px;
 }
+
 /* .personheader {
     display: flex;
     
@@ -159,6 +164,12 @@ main {
     margin: 10px 0;
     padding: 10px;
     border-bottom: 1px solid #ccc;
+    transition: background-color 0.8s ease;
+}
+
+.liHover{
+    background-color: #c1f6fe;
+    transition: background-color 0.8s ease;
 }
 
 #peopleList {
@@ -169,7 +180,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow-y: auto;
-        max-height: 400px;
+    max-height: 400px;
 }
 
 #peopleList ul {
@@ -179,12 +190,13 @@ main {
     flex-wrap: nowrap;
     padding: 10px;
     margin: 10px;
-    
+
 }
 
 
 
-.person, .personheader {
+.person,
+.personheader {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -192,7 +204,7 @@ main {
     gap: 10px;
 }
 
-.pfp img  {
+.pfp img {
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -249,6 +261,7 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .actions {
     display: flex;
     justify-content: flex-end;
@@ -326,9 +339,9 @@ footer {
 
 /* Popup styles */
 #create,
-#info ,
+#info,
 #addContactPopup,
-#editContactPopup{
+#editContactPopup {
     position: fixed;
     top: 0;
     left: 0;
@@ -346,13 +359,13 @@ footer {
 #info.hidden,
 #addContactPopup.hidden,
 #editContactPopup.hidden {
-    display:none;
+    display: none;
 }
 
 #createForm,
-#infoForm ,
-#addContactForm ,
-#editContactForm{
+#infoForm,
+#addContactForm,
+#editContactForm {
     background: rgb(255, 255, 255);
     padding: 2em;
     border-radius: 0px;
@@ -384,7 +397,7 @@ footer {
 
 }
 
-#info div{
+#info div {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -497,28 +510,32 @@ a:hover {
     .secndmain {
         font-size: 1.1em;
     }
-        #peopleList li.person {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 5px;
-        }
-    
-        .btns {
-            margin-left: 0;
-            width: 100%;
-            justify-content: flex-start;
-        }
-    
-        .tag {
-            margin-right: 0;
-        }
-    
-        .pfp img ,
-        #infoImage{
-            width: 40px;
-            height: 40px;
-        }
-        .personheader .pfp,.personheader .name,.personheader .actions{
-            display: none;
-        }
+
+    #peopleList li.person {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .btns {
+        margin-left: 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .tag {
+        margin-right: 0;
+    }
+
+    .pfp img,
+    #infoImage {
+        width: 40px;
+        height: 40px;
+    }
+
+    .personheader .pfp,
+    .personheader .name,
+    .personheader .actions {
+        display: none;
+    }
 }

@@ -12,7 +12,7 @@ export function rednderData(data) {
       <div class="pfp">Profile</div>
       <div class="name">Name</div>
       <div class="tag">Tags</div>
-      <div class="favorite">Favorite</div>
+      <div class="favorite" ><button id="favFilter"><img src="/images/yellowStar.png" id="favIcon"></button></div>
       <div class="actions">Actions</div>
       </li>
   `;
@@ -36,7 +36,7 @@ export function rednderData(data) {
             <div class="name">${data.name}</div>
             <div class="tag">${data.tag || ''}</div>
             <div class="favorite">
-               <button class="favorite-btn"><img src="${data.isfavorite ? '/images/favorite.png' : '/images/favorite.png'}" alt="favorite" /></button>
+               <button class="favorite-btn"><img src="${data.isfavorite ? '/images/yellowStar.png' : '/images/favorite.png'}" alt="favorite" /></button>
             </div>
             <div class="btns">
                 <button class="info-btn"><img class="btn" src="/images/info.png" alt="info" /></button>
@@ -51,7 +51,6 @@ export function rednderData(data) {
 
     
 }
-
 
 
 

@@ -1,5 +1,5 @@
 'use strict';
-import {sortData} from './functions.js';
+import { sortData } from './functions.js';
 
 // Function to render contacts
 
@@ -12,7 +12,7 @@ export function rednderData(data) {
       <div class="pfp">Profile</div>
       <div class="name">Name</div>
       <div class="tag">Tags</div>
-      <div class="favorite" ><button id="favFilter"><img src="/images/yellowStar.png" id="favIcon"></button></div>
+      <div class="favorite" ><button id="favFilter"><img src="./images/yellowStar.png" id="favIcon"></button></div>
       <div class="actions">Actions</div>
       </li>
   `;
@@ -31,17 +31,17 @@ export function rednderData(data) {
         personItem.setAttribute('data-index', index);
         personItem.innerHTML = `
             <div class="pfp">
-                <img src="${data.image || '/images/add.png'}" alt="img" />
+                <img src="${data.image || './images/add.png'}" alt="img" />
             </div>
             <div class="name">${data.name}</div>
             <div class="tag">${data.tag || ''}</div>
             <div class="favorite">
-               <button class="favorite-btn"><img src="${data.isfavorite ? '/images/yellowStar.png' : '/images/favorite.png'}" alt="favorite" /></button>
+               <button class="favorite-btn"><img src="${data.isfavorite ? './images/yellowStar.png' : './images/favorite.png'}" alt="favorite" /></button>
             </div>
             <div class="btns">
-                <button class="info-btn"><img class="btn" src="/images/info.png" alt="info" /></button>
-                <button class="edit-btn"><img class="btn" src="/images/edit.png" alt="edit" /></button>
-                <button class="delete-btn"><img class="btn" src="/images/delete.png" alt="delete" /></button>
+                <button class="info-btn"><img class="btn" src="./images/info.png" alt="info" /></button>
+                <button class="edit-btn"><img class="btn" src="./images/edit.png" alt="edit" /></button>
+                <button class="delete-btn"><img class="btn" src="./images/delete.png" alt="delete" /></button>
             </div>
         `;
 
@@ -49,7 +49,7 @@ export function rednderData(data) {
     });
     peopleCount.innerHTML = `<p>People Count: ${data.length}</p>`;
 
-    
+
 }
 
 

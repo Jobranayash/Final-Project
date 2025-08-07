@@ -9,10 +9,10 @@ effectButton.addEventListener("click", () => {
     effectButton.classList.toggle("active");
 
     if (body.classList.contains("dark-mode")) {
-        effectIcon.src = "images/effectimg.png";
+        effectIcon.src = "./images/effectimg.png";
         effectIcon.alt = "darkmode";
     } else {
-        effectIcon.src = "images/effectimg.png";
+        effectIcon.src = "./images/effectimg.png";
         effectIcon.alt = "lightmode";
     }
 });

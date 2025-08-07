@@ -46,7 +46,7 @@ personList.addEventListener("click", (e) => {
         }
         else if (btn.getAttribute("id") === "favFilter") {
             if (favoriteIcon.src.includes("yellowStar.png")) {
-                favoriteIcon.src = "/images/favorite.png";
+                favoriteIcon.src = "./images/favorite.png";
                 rednderData(data); // Show all contacts
                 console.log("Showing all contacts");
             } else {
@@ -80,7 +80,7 @@ function showInfo(data, index) {
     document.getElementById("infoPhone").textContent = `${data[index].phone}`;
     document.getElementById("infoAddress").textContent = `${data[index].address ? `Address: ${data[index].address}` : ''}`;
     document.getElementById("infoTag").textContent = ` ${data[index].tag ? `Tag: ${data[index].tag}` : ''}`;
-    document.getElementById("infoImage").src = data[index].image ? data[index].image : '/images/add.png';
+    document.getElementById("infoImage").src = data[index].image ? data[index].image : './images/add.png';
     document.getElementById("infoEmail").textContent = `${data[index].email ? `Email: ${data[index].email}` : ''}`;
     document.getElementById("infoBirthday").textContent = `${data[index].birthday ? `Birthday: ${data[index].birthday}` : ''}`;
     document.getElementById("age").textContent = `${data[index].age ? `Age: ${data[index].age}` : ''}`;
@@ -161,7 +161,7 @@ popup.addEventListener("click", (e) => {
                     tag: tagInput.value || '',
                     age: ageInput.value || '',
                     email: emailInput.value || '',
-                    image: newImage || '/images/add.png',
+                    image: newImage || './images/add.png',
                     addTime: new Date().toISOString(),
                     editTime: "",
                     isfavorite: false
@@ -187,7 +187,7 @@ const showPreIfo = function (data, index) {
     tagInput.setAttribute("placeholder", data[index].tag);
     ageInput.setAttribute("placeholder", data[index].age);
     emailInput.setAttribute("placeholder", data[index].email);
-    imageInput.src = data[index].image ? data[index].image : '/images/add.png';
+    imageInput.src = data[index].image ? data[index].image : './images/add.png';
     popup.setAttribute("data-index", index);
     popup.classList.remove("hidden");
 };

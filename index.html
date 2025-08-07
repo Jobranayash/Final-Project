@@ -22,6 +22,11 @@
                     <li><a href="./html/About_Us.html">About us</a></li>
                     <li><a href="./html/Contact_Us.html">Contact us</a></li>
                     <li><a href="./html/accessibility.html">Accessibility</a></li>
+                    <li>
+                        <button id="effect">
+                            <img id="effectIcon" class="effect" src="/images/effectimg.png" alt="effect">
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -69,17 +74,17 @@
 
 
     </footer>
-    <!-- Create Form -->
+    <!-- Create Add Form -->
     <div id="create" class="hidden">
         <form id="createForm">
             <div>
                 <p>Name:</p>
-                <input type="text" id="nameInput" placeholder="Full Name" required />
+                <input type="text" id="nameInput" placeholder="Full " />
             </div>
             <div>
                 <p>Phone Number:
                 </p>
-                <input type="tel" id="phoneInput" placeholder="Phone Number" required />
+                <input type="tel" id="phoneInput" placeholder="Phone Number" />
 
             </div>
             <div>
@@ -90,7 +95,7 @@
 
             <div>
                 <p>Tag:</p>
-                <input type="text" id="tagInput" placeholder="Tag" required />
+                <input type="text" id="tagInput" placeholder="Tag" />
             </div>
             <div>
                 <p>Image:</p>
@@ -98,9 +103,21 @@
                 <input type="file" id="imageInput" accept="image/*" />
 
             </div>
+            <div>
+                <p>Email:</p>
+                <input type="email" id="emailInput" placeholder="Email" />
+            </div>
+            <div>
+                <p>Birthday:</p>
+                <input type="date" id="birthdayInput" />
+            </div>
+            <div>
+                <p>Age:</p>
+                <input type="number" id="ageInput" placeholder="Age" />
+            </div>
 
             <div class="form-actions">
-                <button type="submit">Save</button>
+                <button type="submit" id="submit">Save</button>
                 <button type="button" id="cancelBtn">Cancel</button>
             </div>
         </form>
@@ -108,35 +125,61 @@
 
 
 
-
-
-    <!-- Edit Form -->
+    <!-- info Form -->
     <div id="info" class="hidden">
+
         <form id="infoForm">
+            <button id="closeInfoBtn" class="close-btn" aria-label="Close info popup">X</button>
             <div>
-                <p>Name:</p>
-            </div>
-            <div>
-                <p>Phone Number:
-                </p>
+                <img id="infoImage"></img>
 
             </div>
             <div>
-                <p>Adress:</p>
+                <div>
+                    <p id="infoName"></p>
+                </div>
+                <div>
+                    <p id="infoPhone">
+                    </p>
 
+                </div>
+                <div>
+                    <p id="infoAddress"></p>
+
+                </div>
+
+
+                <div>
+                    <p id="infoTag"></p>
+                </div>
+                <div>
+                    <p id="infoFavorite"></p>
+                </div>
+                <div>
+                    <p id="infoEmail"></p>
+                </div>
+                <div>
+                    <p id="infoBirthday"></p>
+                </div>
+                <div>
+                    <p id="age"></p>
+                </div>
+                <div>
+                    <p id="infoAddTime"></p>
+                </div>
+                <div>
+                    <p id="infoEditTime"></p>
+                </div>
             </div>
-
-            <div>
-                <p>Image:</p>
-
-            </div>
-
         </form>
     </div>
-
-    <script type="module" src="./js/searchContact.js"></script>
     <script type="module" src="./js/js.js"></script>
+    <script type="module" src="./js/effect.js"></script>
+    <script type="module" src="./js/searchInput.js"></script>
+    <script type="module" src="./js/deleteAll.js"></script>
+    <script type="module" src="./js/listButtons.js"></script>
 
 </body>
+
 
 </html>

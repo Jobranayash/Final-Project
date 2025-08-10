@@ -1,6 +1,7 @@
 'use strict';
 import { data } from './data.js';
 import { rednderData } from './showData.js';
+
 const searchInput = document.getElementById("searchInput");
 
 searchInput.addEventListener("input", () => {

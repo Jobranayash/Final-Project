@@ -28,7 +28,7 @@ export function rednderData(data) {
 
         const personItem = document.createElement('li');
         personItem.classList.add('person');
-        personItem.setAttribute('data-index', index);
+        personItem.setAttribute('data-index', data.id);
         personItem.innerHTML = `
             <div class="pfp">
                 <img src="${data.image || './images/add.png'}" alt="img" />
